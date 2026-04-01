@@ -24,6 +24,7 @@ int main() {
     cout << "\nEncrypted: " << cipher;
     cout << "\nHash: " << hashValue;
     cout << "\nDecrypted: " << decrypted << endl;
+    cout << "\nDEBUG HASH: " << computeHash("abc");
 
     return 0;
 }
