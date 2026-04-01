@@ -1,9 +1,9 @@
 Multiplicative Cipher with Polynomial Rolling Hash
 
-Description
+Description:
 This project implements the Multiplicative Cipher along with a custom Polynomial Rolling Hash function.
 
-Multiplicative Cipher
+MULTIPLICATIVE CIPHER-
 
 Encryption Formula:
        C = (P × k) mod 26
@@ -17,7 +17,7 @@ Where:
 * k = Key (coprime with 26)
 * k⁻¹ = Modular inverse of k
 
-Hash Function (Polynomial Rolling Hash)
+Hash Function (Polynomial Rolling Hash):
 Hash(s) = (Σ (s[i] × p^i)) mod m
 Where:
 * p = 31
