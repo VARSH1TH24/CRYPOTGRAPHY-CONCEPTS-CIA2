@@ -11,7 +11,7 @@ long long computeHash(string text) {
 
     for (char c : text) {
         if (isalpha(c)) {
-            long long value = tolower(c) - 'a' + 1;
+            long long value = (tolower(c) - 'a' + 1 + 26) % 26;
             hash = ((hash * p) % m + value) % m;   
         }
     }
