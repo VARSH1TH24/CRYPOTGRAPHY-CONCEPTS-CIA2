@@ -12,9 +12,9 @@ long long computeHash(string text) {
     for (char c : text) {
         if (isalpha(c)) {
             long long value = tolower(c) - 'a' + 1;
-            hash = (hash * p + value) % m;   
+            hash = ((hash * p) % m + value) % m;   
         }
     }
 
-    return hash;   
+    return (hash + m) % m;   
 }
